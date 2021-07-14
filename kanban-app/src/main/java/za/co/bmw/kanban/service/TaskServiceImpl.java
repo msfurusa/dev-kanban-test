@@ -4,6 +4,8 @@ import za.co.bmw.kanban.model.Task;
 import za.co.bmw.kanban.model.TaskDTO;
 import za.co.bmw.kanban.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,6 +17,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class TaskServiceImpl implements TaskService {
 
+	@Autowired
     private final TaskRepository taskRepository;
 
     @Override

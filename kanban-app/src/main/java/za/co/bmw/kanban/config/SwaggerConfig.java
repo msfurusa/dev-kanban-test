@@ -25,12 +25,15 @@ public class SwaggerConfig {
                 .build()
                 .apiInfo(getApiInfo());
     }
-
+    
     private ApiInfo getApiInfo() {
         return new ApiInfo(
                 "Kanban REST API",
                 "This is a REST API of Kanban REST API, where you can get/add/remove/modify Kanban board and its task.",
-                "v1",
+                "v1", 
+                "Terms of service", 
+                new Contact("Contact Guy", "www.doamin.com", "address@domain.com"), 
+                "License of API", "API license URL", Collections.emptyList()
         );
     }
 }

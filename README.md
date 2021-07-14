@@ -1,15 +1,20 @@
 ## Test Instructions
-1) On the “Kanban Board“ landing page there is a “+Create Kanban” button.   For each Kanban item that gets created there must be a created date visible on the item, currently there is no date available. (The date must be persisted in the DB)
+1) On the “Kanban Board“ landing page there is a “+Create Kanban” button.   
+	For each Kanban item that gets created there must be a created date visible on the item, 
+	currently there is no date available. -- DONE
+	(The date must be persisted in the DB) -- DONE
 
-2) Click on any Kanban item that was created.  You will then be able to view the Kanban details with different columns.   Add a new “Testing” column.
+2) Click on any Kanban item that was created.  You will then be able to view the Kanban details with different columns.   
+	Add a new “Testing” column. -- DONE
 
-3) Click on “+Create Task” button and add 2 more colours (red & green) in the “Select colour” combobox.  When adding a new item with the new colours added it must then display the task item in that colour.
+3) Click on “+Create Task” button and add 2 more colours (red & green) in the “Select colour” combobox. -- DONE
+		When adding a new item with the new colours added it must then display the task item in that colour. -- DONE
 
-4) Add a “Back” button to navigate back to the “Kanban boards” landing page
+4) Add a “Back” button to navigate back to the “Kanban boards” landing page -- DONE
 
 5) Add a “Delete” button to be able to delete a Kanban item on the “Kanban Board” landing page
 
-6) Using CSS change the background of the pages.
+6) Using CSS change the background of the pages. -- DONE
 
 7) Write unit tests for the new functionality you have added.
 

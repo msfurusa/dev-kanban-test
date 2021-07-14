@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -28,6 +30,9 @@ public class Kanban {
 
     @ApiModelProperty(position = 2)
     private String title;
+    
+    @Column(name = "created_date")
+    private LocalDateTime createdDate;
 
     @OneToMany(
             cascade = {CascadeType.ALL},

@@ -6,9 +6,12 @@ import za.co.bmw.kanban.model.Task;
 import za.co.bmw.kanban.model.TaskDTO;
 import za.co.bmw.kanban.repository.KanbanRepository;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -17,6 +20,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class KanbanServiceImpl implements KanbanService {
 
+	@Autowired
     private final KanbanRepository kanbanRepository;
 
     @Override
@@ -69,6 +73,7 @@ public class KanbanServiceImpl implements KanbanService {
     private Kanban convertDTOToKanban(KanbanDTO kanbanDTO){
         Kanban kanban = new Kanban();
         kanban.setTitle(kanbanDTO.getTitle());
+        kanban.setCreatedDate(LocalDateTime.now());
         return kanban;
     }
 
